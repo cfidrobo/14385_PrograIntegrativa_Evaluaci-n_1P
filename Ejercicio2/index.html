@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunicación entre Componentes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="text-align: center;"><B>Nombre:</B> Cristian Idrobo <br> <B>NRC:</B> 14385</h1>
+
+    <div id="titulo">Ejercicio 2: Comunicación entre Componente</div>
+    <ul>
+        <li>Crea dos componentes web: emisor-component y receptor-component.</li>
+        <li>El componente emisor-component debe tener un botón.</li>
+        <li>Al hacer clic en el botón, el componente emisor-component emite un evento
+            personalizado con un mensaje.</li>
+            <li>El componente receptor-component escucha ese evento y muestra el mensaje
+                recibido.</li>
+        
+    </ul>
+
+    <div id="emisor-receptor-container">
+        <button id="miBotonEmisor">Haz clic (Emisor)</button>
+        <p id="mensajeReceptor">Mensaje recibido: </p>
+    </div>
+
+    <script src="componentes.js"></script>
+</body>
+</html>

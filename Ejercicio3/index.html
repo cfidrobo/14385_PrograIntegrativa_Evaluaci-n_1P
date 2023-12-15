@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uso de Slots</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #a2bb90;
+
+    }
+
+    .container {
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 1.5em;
+      text-align: center;
+    }
+
+    div[slot] {
+      background-color: transparent !important;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    img[slot="image"] {
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* Estilos adicionales para etiquetas de nombre */
+    .header-slot-label {
+      background-color: #8dbef2;
+      padding: 5px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+
+    .content-slot-label {
+      background-color: #ef88ef;
+      padding: 5px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+
+    .footer-slot-label {
+      background-color: #f8d7da;
+      padding: 5px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <contenedor-component>
+      <div slot="header">
+        <div class="header-slot-label">Header Slot</div>
+        <h1><B>Nombre:</B> Cristian Idrobo  <br> <B>NRC:</B> 14385</h1>
+      </div>
+
+      <div slot="content">
+        <div class="content-slot-label">Content Slot</div>
+
+        
+
+        <h2>        Ejercicio 3: Uso de Slots
+        </h2>
+        <li> Desarrolla un componente llamado contenedor-component.</li>
+        <li> El componente debe tener un área de encabezado y un área de contenido, utilizando
+        </li>
+        <li> Permite que el contenido del encabezado y del cuerpo sea personalizado cuando se
+          utiliza el componente.</li>
+      </div>
+    </contenedor-component>
+  </div>
+  <script src="components.js"></script>
+</body>
+</html>
